@@ -1,0 +1,17 @@
+@import url('../__columns/place__columns.css');
+
+.place {
+    width: 100%;
+    font-family  : Inter;
+    color: white;
+    margin-bottom: 72px;
+}
+
+.place :last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 424px) {
+    .place {
+        margin-bottom: 48px;
+}

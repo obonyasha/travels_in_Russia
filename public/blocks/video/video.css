@@ -1,0 +1,36 @@
+@import url('./content-title/content-title.css');
+@import url('./content-subtitle/content-subtitle.css');
+@import url('./__container/video__container.css');
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 92.5%;
+    font-family: Inter;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 1025px) {
+    .video {
+        width: 92.5%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .video {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+    .video {
+        width: 93.75%;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .video {
+        width: 90%;
+    }
+}

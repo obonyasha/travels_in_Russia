@@ -1,0 +1,23 @@
+.cover-bg{
+    max-width: 100%;
+    min-height: 594px;
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .cover-bg {
+        min-height: 562px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+    .cover-bg {
+        min-height: 500px;
+    }
+}
+@media screen and (max-width: 424px) {
+    .cover-bg {
+        min-height: 272px;;
+    }
+}

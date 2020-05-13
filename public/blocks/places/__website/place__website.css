@@ -1,0 +1,12 @@
+@import url('../__url-hearding/place__url-hearding.css');
+@import url('../__url/place__url.css');
+
+.place__website{
+    width: 49.18%;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 424px) {
+    .place__website {
+        display: none;
+}

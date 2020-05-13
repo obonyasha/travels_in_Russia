@@ -1,0 +1,10 @@
+@import url('../__image/emblem__image.css');
+@import url('../__city/emblem__city.css');
+
+.emblem__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    widows: 208px;;
+}

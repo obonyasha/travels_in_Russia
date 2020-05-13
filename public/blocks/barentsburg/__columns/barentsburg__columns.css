@@ -1,0 +1,7 @@
+@import url('../__text/barentsburg__text.css');
+@import url('../__url/barentsburg__url.css');
+
+.barentsburg__columns{
+display: flex;
+margin-top: 48px;
+}

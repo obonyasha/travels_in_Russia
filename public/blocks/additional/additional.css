@@ -1,0 +1,14 @@
+@import url('../video/content-title/content-title.css');
+@import url('../video/content-subtitle/content-subtitle.css');
+@import url('./__container/additional__container.css');
+
+.additional{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 92.5%;
+    margin: auto;
+    margin-top: 102px;
+    font-family: Inter;
+    color: #FFFFFF;
+}

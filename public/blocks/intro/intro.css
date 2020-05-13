@@ -1,0 +1,40 @@
+@import url('./__title/intro__title.css');
+@import url('./__content-left/intro__content-left.css');
+@import url('./__list/intro__list.css');
+
+.intro{
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+    width: 100%;
+    font-family: Inter;
+    color: #FFFFFF;  
+}
+
+@media screen and (min-width: 1025px) {
+    .intro {
+        width: 76.95%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .intro {
+        width: 90%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+    .intro {
+        width: 93.75%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .intro {
+        width: 90%;
+        margin-top: 64px;
+        padding: 0;
+    }
+}

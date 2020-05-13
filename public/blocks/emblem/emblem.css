@@ -1,0 +1,13 @@
+@import url('./__title/emblem__title.css');
+@import url('./__container/emblem__container.css');
+
+.emblem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 92.5%;
+    margin: 0 auto;
+    margin-top: 82px;
+    font-family: Inter;
+    color: #FFFFFF;
+}

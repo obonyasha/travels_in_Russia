@@ -1,0 +1,8 @@
+@import url('../__link/footer__link.css');
+
+
+@media screen and (max-width: 768px) {
+    .footer__item {
+        margin-bottom: 32px;
+    }
+}

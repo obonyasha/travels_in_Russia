@@ -1,0 +1,27 @@
+@import url('../__paragraph/place__paragraph.css');
+
+.place__container{
+    width: 49%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
+.place__container :last-child{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+    .place__container  {
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .place__container  {
+        font-size: 16px;
+        line-height: 27px;
+        width: 90%;
+        margin-top: 24px;
+}

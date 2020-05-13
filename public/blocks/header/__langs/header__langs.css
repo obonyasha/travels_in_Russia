@@ -1,0 +1,15 @@
+@import url('../__lang/header__lang.css');
+
+
+.header__langs{
+    display: flex;
+    justify-content: space-between;
+    width: 78px;
+}
+
+@media screen and (max-width: 424px) {
+    .header__langs{
+        
+        width: 76px;
+    }
+}

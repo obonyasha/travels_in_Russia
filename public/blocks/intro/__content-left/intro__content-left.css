@@ -1,0 +1,29 @@
+.intro__content-left {
+    margin: 0;
+    padding: 0;
+    margin-top: 48px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@media screen and (min-width: 1025px) {
+    .intro__content-left {
+        width: 683px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .intro__content-left {
+        width: 692px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .intro__content-left {
+        font-size: 16px;
+        line-height: 27px;
+        margin-top: 32px;
+    }
+}

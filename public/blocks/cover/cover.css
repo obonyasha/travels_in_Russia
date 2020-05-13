@@ -1,0 +1,29 @@
+@import url('./cover-bg/cover-bg.css');
+@import url('./__link/cover__link.css');
+
+.cover{
+    position: relative;
+    width: 92.5%;
+    margin-top: 102px;
+    font-family: Inter;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .cover {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) {
+    .cover {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .cover {
+        width: 100%;
+        margin-top: 48px;
+    }
+}

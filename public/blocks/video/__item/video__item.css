@@ -1,0 +1,15 @@
+@import url('../__item-bg/video__item-bg.css');
+@import url('../__link/video__link.css');
+
+.video__item{
+    position: relative;
+    width: 49%;
+    height: 100%;
+}
+
+@media screen and (max-width: 424px) {
+    .video__item {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}

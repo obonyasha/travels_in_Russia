@@ -1,0 +1,21 @@
+@import url('../__duration/video__duration.css');
+@import url('../__title/video__title.css');
+@import url('../__subtitle/video__subtitle.css');
+
+.video__link{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-left: 30px;
+}
+.video__link:before {
+    position: absolute;
+    content: '';
+    top: 5%;
+    left: 5%;
+    width: 41px;
+    height: 41px;
+    background-image: url("../../../images/icon_play.svg");
+}
