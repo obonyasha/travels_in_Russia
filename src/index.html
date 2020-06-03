@@ -4,13 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Путешествия по России</title>
-    <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <!--<link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">-->
 </head>
 
 <body>
-    <div class="page">
+    <div class="container justify-content-center page w-80">
+        <div class="row pt-4">
+            <div class="col-sm-6">
+                <img src="<%=require('./images/logo.svg').default%>" class="img-fluid" alt="Россия">
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col d-flex justify-content-end">
+                        <p class="mt-3 mr-3 link">En</p>
+                        <p class="mt-3 link">Ru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col w-80">
+                <h1 class="text-center">Путешествия по России</h1>
+                <h2 class="text-center pt-5">Настоящая страна не в выпусках новостей, а здесь.</h2>
+                <img src="<%=require('./images/polka.jpg').default%>" alt="Верхняя полка" class="img-fluid pt-5">
+                <p class="">ваша полка — верхняя</p>
+            </div>
+        </div>
+
+    </div>
+    <!--<div class="page">
         <header class="header">
             <img src="<%=require('./images/logo.svg').default%>" alt="Россия" class="header__logo">
             <div class="header__langs">
@@ -141,7 +168,8 @@
                         </div>
                     </div>
                     <div class="place__columns">
-                        <img src="<%=require('./images/winter-baikal.jpg').default%>" alt="Зимний Байкал" class="place__image">
+                        <img src="<%=require('./images/winter-baikal.jpg').default%>" alt="Зимний Байкал"
+                            class="place__image">
                         <div class="place__container">
                             <p class="place__paragraph">Всем известен Байкал как крупнейшее озеро в мире. Многие также
                                 знают, что это самый большой источник пресной воды и одно из красивейших мест в России.
@@ -183,7 +211,8 @@
                     исследования</p>
                 <div class="video__container">
                     <div class="video__item">
-                        <img src="<%=require('./images/kamchatka_video.jpg').default%>" alt="Камчатка" class="video__item-bg">
+                        <img src="<%=require('./images/kamchatka_video.jpg').default%>" alt="Камчатка"
+                            class="video__item-bg">
                         <a href="https://vimeo.com/81106671" target="_blank" class="video__link link">
                             <p class="video__duration">6:30</p>
                             <h2 class="video__title">Colors of Kamchatka</h2>
@@ -191,7 +220,8 @@
                         </a>
                     </div>
                     <div class="video__item">
-                        <img src="<%=require('./images/observ_video.jpg').default%>" alt="Обсерватория" class="video__item-bg">
+                        <img src="<%=require('./images/observ_video.jpg').default%>" alt="Обсерватория"
+                            class="video__item-bg">
                         <a href="https://vimeo.com/290675450" target="_blank" class="video__link link">
                             <p class="video__duration">24:45</p>
                             <h2 class="video__title">Обсерватория&nbsp;| Observatory</h2>
@@ -207,20 +237,23 @@
                     конкурсах</p>
                 <div class="comments__conteiner">
                     <div class="comment">
-                        <img src="<%=require('./images/lyagushkin.jpg').default%>" alt="Фото Виктора Лягушкина" class="comment__image">
+                        <img src="<%=require('./images/lyagushkin.jpg').default%>" alt="Фото Виктора Лягушкина"
+                            class="comment__image">
                         <p class="comment__quote">«Если вам кажется, что в России ничего не происходит, то просто
                             выгляньте “наружу”…»</p>
                         <p class="comment__author">Виктор Лягушкин</p>
                     </div>
                     <div class="comment">
-                        <img src="<%=require('./images/hafizov.jpg').default%>" alt="Фото Ивана Хафизова" class="comment__image">
+                        <img src="<%=require('./images/hafizov.jpg').default%>" alt="Фото Ивана Хафизова"
+                            class="comment__image">
                         <p class="comment__quote">«Если в город едут туристы — неважно за чем они туда едут: за шамбалой
                             или фрески Рублева искать, или на родину Тарковского — туристы обеспечивают любой город
                             молодёжью, рабочими местами и в конечном счёте наполняют его жизнью.»</p>
                         <p class="comment__author">Иван Хафизов</p>
                     </div>
                     <div class="comment">
-                        <img src="<%=require('./images/maksimshin.jpg').default%>" alt="Фото Сергея Максимишина" class="comment__image">
+                        <img src="<%=require('./images/maksimshin.jpg').default%>" alt="Фото Сергея Максимишина"
+                            class="comment__image">
                         <p class="comment__quote">«Ты приезжаешь, и люди рассказывают тебе, как им плохо. А когда ты
                             покажешь, как им плохо, то ты сволочь и всё очернил.»</p>
                         <p class="comment__author">Сергей Максимишин</p>
@@ -254,7 +287,18 @@
             </ul>
             <p class="footer__copyright">&#169; 2019. Tatiana Stepanova</p>
         </footer>
-    </div>
+    </div>-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 
